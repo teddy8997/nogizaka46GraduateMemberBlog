@@ -1,0 +1,2 @@
+# nogizaka46GraduateMemberBlog
+ 
