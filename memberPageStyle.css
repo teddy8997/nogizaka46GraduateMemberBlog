@@ -1,0 +1,252 @@
+body{
+    padding:0;
+    margin:0;
+    background-color:#5d8fbe;
+    font-family:Meiryo, "Meiryo UI", sans-serif;
+}
+#app{
+    padding:24px 0
+}
+.group{
+    margin: 0 auto;
+    max-width: 800px;
+}
+.year{
+    margin:50px;
+    padding:0 0 6px 6px;
+    color:#363333;
+    font-size:5vmin;
+    line-height:30px;
+    font-weight: bold;
+    border-bottom:solid 2px #363333
+}
+.list {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    margin: 0 16px;
+    justify-content: start;
+}
+.list-container{
+    width:50%;
+    max-width:180px
+}
+.member{
+    border-radius:6px;
+    cursor:pointer;
+    color:#2b2d42;
+    background-color:white;
+    margin:8px;
+    padding:6px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    transition:all 0.5s linear;
+    text-decoration:none
+}
+.member:hover{
+    background-color:#b5bfd1;
+    color:#7D2982;
+    transition:all 0.2s linear
+}
+.member:hover .avatar img{
+    transform:scale(1.08)
+}
+.member .avatar{
+    position:relative;
+    width:97%;
+    height:200px;
+    overflow:hidden
+}
+.member .avatar img{
+    width:100%;
+    height:100%;
+    transition:transform .35s ease;
+    object-fit:cover
+}
+.member .info{
+    display:flex;
+    flex-direction:column;
+    margin:10px 0 0 0;
+    text-shadow:1px 1px 5px #c2c2c2
+}
+.member .info .name{
+    font-size:21px;
+    line-height:23px
+}
+.header{
+    height:225px
+}
+.header .bg{
+    height:100%;
+    width:100%;
+    background-image:url("./photo.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position-y:100%;
+    filter:blur(5px);
+    -webkit-filter:blur(5px)
+}
+@media screen and (max-width: 700px){
+    .header .bg{
+        background-position-x:50%
+    }
+    .container{
+        display:flex;
+        flex-direction:column
+    }
+}
+.header .title{
+    position:absolute;
+    top:70px;
+    color:#363333;
+    z-index:100;
+    width:100%;
+    text-align:center;
+    font-size: 5vmin;
+}
+.footer{
+    padding:12px 0;
+    background-color:#3c4146
+}
+
+.footer .slogan{
+    text-align:center;
+    color:#e1e1e1;
+    font-size:12px
+}
+.h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.header .title {
+    position: absolute;
+    top: 70px;
+    color: #363333;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    font-size: 5vmin;
+    font-family:Meiryo, "Meiryo UI", sans-serif;
+}
+
+html,body{
+    height: 100%
+}
+body{
+    background-color: #546377;
+}
+.side-menu{
+    position: relative;
+    width: 150px;
+    height: 20%;
+    background-color:#363333;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 10px hsla(240, 40%, 15%, .6);
+    border-radius: 0 10px 10px 0;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+
+.side-menu label{
+    color:#fff;
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: #2b2d42;
+    right:-40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+#side-menu-switch{
+    position:absolute;
+    opacity: 0;
+}
+
+#side-menu-switch:checked + .side-menu{
+    transform: translateX(0);
+}
+
+#side-menu-switch:checked + .side-menu label .fa{
+    transform: scaleX(-1);
+}
+nav a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    
+}
+nav a + a ::before{
+    content: '';
+    position: absolute;
+    border-top: 1px solid #fff;
+    left: 10px;
+    right: 10px;
+    top: 0;
+}
+#nogizaka:hover{
+    background-color:#b5bfd1;
+    color:#7D2982;
+    font-weight: bold;
+    transition:all 0.2s linear;
+    transform:scale(1);
+    border-radius: 20px;
+}
+
+#sakurazaka:hover{
+    background-color:#b5bfd1;
+    color:#fff;
+    font-weight: bold;
+    transition:all 0.2s linear;
+    transform:scale(1);
+    border-radius: 20px;
+}
+
+#keyakizaka:hover{
+    background-color:#b5bfd1;
+    color:#278133;
+    font-weight: bold;
+    transition:all 0.2s linear;
+    transform:scale(1);
+    border-radius: 20px;
+}
+
+#hinatazaka:hover{
+    background-color:#b5bfd1;
+    color:#00bfff;
+    font-weight: bold;
+    transition:all 0.2s linear;
+    transform:scale(1);
+    border-radius: 20px;
+}
+.icon{
+    position: relative;
+    transform:scale(0.01);
+}
+
+.container{
+    display:flex;
+}
+.item-right{
+    flex:1; 
+}
+.item-left{
+    flex:1;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "斉藤優里",
+  "name_hiragana": "さいとうゆうり",
+  "image": "../../member_img/yuuri.saito.jpg",
+  "intro": [
+    {
+      "key": "生年月日",
+      "value": "1993年7月20日"
+    },
+    {
+      "key": "血液型",
+      "value": "O型"
+    },
+    {
+      "key": "星座",
+      "value": "巨蟹座"
+    },
+    {
+      "key": "身高",
+      "value": "157cm"
+    }
+  ],
+  "tag": "1期生"
+}
+
