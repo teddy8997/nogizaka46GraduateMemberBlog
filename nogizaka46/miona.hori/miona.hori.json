@@ -1,0 +1,25 @@
+{
+  "name": "堀未央奈",
+  "name_hiragana": "ほりみおな",
+  "image": "../../member_img/miona.hori.jpg",
+  "intro": [
+    {
+      "key": "生年月日",
+      "value": "1996年10月15日"
+    },
+    {
+      "key": "血液型",
+      "value": "O型"
+    },
+    {
+      "key": "星座",
+      "value": "天秤座"
+    },
+    {
+      "key": "身高",
+      "value": "162cm"
+    }
+  ],
+  "tag": "2期生"
+}
+
