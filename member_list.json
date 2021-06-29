@@ -7,7 +7,7 @@
         "name": "西野七瀨",
         "name_hiragana": "にしのななせ",
         "image": "./member_img/nanase.nishino.jpg",
-        "link" : "../nogizaka46/nanase.nishino/nanase.nishino.html",
+        "link" : "./nogizaka46/nanase.nishino/nanase.nishino.html",
         "graduation_date": "2018年12月31日"
       }
     ]
@@ -20,28 +20,28 @@
         "name": "衛藤美彩",
         "name_hiragana": "えとうみさ",
         "image": "./member_img/misa.eto.jpg",
-        "link" : "../nogizaka46/misa.eto/misa.eto.html",
+        "link" : "./nogizaka46/misa.eto/misa.eto.html",
         "graduation_date": "2019年3月31日"
       },
       {
         "name": "伊藤かりん",
         "name_hiragana": "いとうかりん",
         "image": "./member_img/karin.itou.jpg",
-        "link" : "../nogizaka46/karin.itou/karin.itou.html",
+        "link" : "./nogizaka46/karin.itou/karin.itou.html",
         "graduation_date": "22019年5月24日"
       },
       {
         "name": "斉藤優里",
         "name_hiragana": "さいとうゆうり",
         "image": "./member_img/yuuri.saito.jpg",
-        "link" : "../nogizaka46/yuuri.saito/yuuri.saito.html",
+        "link" : "./nogizaka46/yuuri.saito/yuuri.saito.html",
         "graduation_date": "2019年6月30日"
       },
       {
         "name": "桜井玲香",
         "name_hiragana": "さくらいれいか",
         "image": "./member_img/reika.sakurai.jpg",
-        "link" : "../nogizaka46/reika.sakurai/reika.sakurai.html",
+        "link" : "./nogizaka46/reika.sakurai/reika.sakurai.html",
         "graduation_date": "2019年9月1日"
       }
     ]
@@ -54,28 +54,28 @@
         "name": "佐々木琴子",
         "name_hiragana": "ささきことこ",
         "image": "./member_img/kotoko.sasaki.jpg",
-        "link" : "../nogizaka46/kotoko.sasaki/kotoko.sasaki.html",
+        "link" : "./nogizaka46/kotoko.sasaki/kotoko.sasaki.html",
         "graduation_date": "2020年3月31日"
       },
       {
         "name": "井上小百合",
         "name_hiragana": "いのうえさゆり",
         "image": "./member_img/sayuri.inoue.jpg",
-        "link" : "../nogizaka46/sayuri.inoue/sayuri.inoue.html",
+        "link" : "./nogizaka46/sayuri.inoue/sayuri.inoue.html",
         "graduation_date": "2020年4月27日"
       },
       {
         "name": "中田花奈",
         "name_hiragana": "なかだかな",
         "image": "./member_img/kana.nakada.jpg",
-        "link" : "../nogizaka46/kana.nakada/kana.nakada.html",
+        "link" : "./nogizaka46/kana.nakada/kana.nakada.html",
         "graduation_date": "2020年10月25日"
       },
       {
         "name": "白石麻衣",
         "name_hiragana": "しらいしまい",
         "image": "./member_img/mai.shiraishi.jpg",
-        "link" : "../nogizaka46/mai.shiraishi/mai.shiraishi.html",
+        "link" : "./nogizaka46/mai.shiraishi/mai.shiraishi.html",
         "graduation_date": "2020年10月28日"
       }
     ]
@@ -88,7 +88,7 @@
         "name": "堀未央奈",
         "name_hiragana": "ほりみおな",
         "image": "./member_img/miona.hori.jpg",
-        "link" : "../nogizaka46/miona.hori/miona.hori.html",
+        "link" : "./nogizaka46/miona.hori/miona.hori.html",
         "graduation_date": "2021年3月28日"
       }
     ]
