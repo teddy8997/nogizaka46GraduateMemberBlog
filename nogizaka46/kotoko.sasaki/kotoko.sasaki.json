@@ -1,0 +1,24 @@
+{
+  "name": "佐々木琴子",
+  "name_hiragana": "ささきことこ",
+  "image": "../../member_img/kotoko.sasaki.jpg",
+  "intro": [
+    {
+      "key": "生年月日",
+      "value": "1998年8月28日"
+    },
+    {
+      "key": "血液型",
+      "value": "A型"
+    },
+    {
+      "key": "星座",
+      "value": "處女座"
+    },
+    {
+      "key": "身高",
+      "value": "163cm"
+    }
+  ],
+  "tag": "2期生"
+}
