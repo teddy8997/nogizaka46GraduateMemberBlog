@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="../../mainNogizaka.css">
+</head>
+<body>
+    <div id="app">
+        <button id="btn-toggle" v-bind:class="{'hide': isFold}" v-on:click="onToggle()">
+            <img src="../../menu.svg" alt="">
+        </button>
+
+        <div class="member" v-bind:class="{'hide':isFold}" >
+            <button id="btn-home" onclick="location.href='../nogizaka46.html'">
+                <img src="../../arrow.svg" alt="" srcset="">
+                <span>上一頁</span>
+            </button> 
+            <img v-bind:src="member.image" alt="" class="avatar"> 
+            <div class="name">{{member.name}}</div>
+            <div class="name hiragana">{{member.name_hiragana}}</div>
+            
+            <ul class="intro">
+                <li v-for="item in member.intro">
+                    <span class="key">{{item.key}}</span> 
+                    <span class="value">{{item.value}}</span>
+                </li>
+            </ul>
+            <ul class="tag">
+                <li>{{member.tag}}</li>
+            </ul>
+        </div>
+
+       
+
+        <div class="menu" v-bind:class="{'hide':isFold}">
+            <div class="loading-spinner"  v-if="isLoading">
+              <div class="spinner"></div>
+            </div>
+            <ul>
+              <li v-for="(item,index) in list" v-on:click="activate(index)" v-bind:class="index==select?'selected':''">
+                <div v-html="item.title"></div>
+                <div v-if="item.title.length==0">&nbsp;&nbsp;&nbsp;</div>
+                <div class="small-datetime">{{item.date}}</div>
+              </li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <div class="content" v-html="list[select]['body']"></div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var app= new Vue({
+           el: '#app',
+           data:{
+               list: [],
+               member:{},
+               select:0,
+               isFold: false,
+               isLoading: false,
+               sortType: 'date'
+           },
+           methods: {
+                activate:function(el){
+                    this.select = el;
+                },
+                onToggle:function(){
+                    this.isFold = !this.isFold;
+                },
+           },
+           created: function () 
+           {
+                var _this = this
+                fetch("../reika.sakurai/reika.sakurai.json")
+                    .then(resp => resp.json())
+                    .then(json => {
+                        _this.member = json;
+                    })
+                    .catch(err => {
+                        console.warn(err);
+                    })
+
+                fetch("../reika.sakurai/result.json")
+                    .then(resp => resp.json())
+                    .then(json => {
+                        _this.list = json;
+                    })
+                    .catch(function (err) {
+                        _this.isLoading = false;
+                        console.log(err);
+                    });
+            }
+    });
+    </script>

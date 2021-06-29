@@ -1,0 +1,25 @@
+{
+  "name": "西野七瀬",
+  "name_hiragana": "にしのななせ",
+  "image": "../../member_img/nanase.nishino.jpg",
+  "intro": [
+    {
+      "key": "生年月日",
+      "value": "1994年5月25日"
+    },
+    {
+      "key": "血液型",
+      "value": "O型"
+    },
+    {
+      "key": "星座",
+      "value": "雙子座"
+    },
+    {
+      "key": "身高",
+      "value": "159cm"
+    }
+  ],
+  "tag": "1期生"
+}
+
